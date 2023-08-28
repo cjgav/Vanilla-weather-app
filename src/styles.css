@@ -1,6 +1,8 @@
 body {
-  background-color: #fff1ba;
+  background-color: white;
   font-family: "VT323", monospace;
+  display: center;
+  list-style: none;
 }
 
 h1 {
@@ -8,11 +10,15 @@ h1 {
   font-weight: 100;
   line-height: 28px;
   margin-bottom: 0;
+  margin: 15px 15px;
+  padding: 20px 25px;
 }
 
 ul {
   margin: 0;
   padding: 0;
+  text-align: left;
+  list-style: none;
 }
 
 li {
@@ -21,6 +27,8 @@ li {
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
+  display: inline-block;
+  margin-right: 10px;
 }
 
 #date {
@@ -34,16 +42,6 @@ li {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
-}
-
-.weather-app {
-  border: 1px solid #dadde1;
-  border-radius: 5px;
-  padding: 35px 50px;
-}
-
-.overview {
-  margin-bottom: 20px;
 }
 
 .weather-temperature img {
@@ -87,5 +85,66 @@ li {
 }
 
 .forecast-temp-min {
-  color: #878787;
+  color: black;
+}
+
+.container-1 {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 35px 50px;
+}
+
+.container {
+  display: block;
+  text-align: center;
+  width: 800px;
+  height: auto;
+  border: 1px solid black;
+  margin: 50px auto;
+  width: 100%;
+  border-radius: 5px;
+  padding: 35px 50px;
+}
+
+.info {
+  list-style: none;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  margin-left: calc(-0.5 * var(--bs-gutter-x));
+}
+
+.icon {
+  font-size: 32px;
+}
+
+button {
+  display: inline;
+  margin: 0 auto;
+  background: black;
+  color: white;
+  padding: 10px 10px;
+  font-family: "VT323", monospace;
+}
+
+.row {
+  color: black;
+  margin: 8px 15px;
+  padding: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: black;
+  border-color: black;
+}
+
+.col {
+  display: inline-block;
 }

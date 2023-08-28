@@ -27,7 +27,7 @@ function formatDate(timestamp) {
   }
   let currentDate = date.getDate();
 
-  return `${day}, ${month} ${currentDate}, ${hours}:${minutes}`;
+  return `${day} | ${month} ${currentDate} | ${hours} : ${minutes}`;
 }
 
 function formatDay(timestamp) {

@@ -30,9 +30,13 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form" class="mb-3">
-            <div class="row">
-              <div class="col-9">
+          <div class="row">
+            <div class="col">
+              Last Updated :
+              <span id="date"></span>
+            </div>
+            <form id="search-form" class="mb-3">
+              <div class="col">
                 <input
                   type="search"
                   placeholder="Enter a city"
@@ -40,44 +44,43 @@
                   class="form-control"
                   id="city-input"
                 />
-              </div>
-              <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-75"
-                />
-              </div>
-            </div>
-          </form>
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li>
-                Last Updated:
-                <span id="date"></span>
-              </li>
-              <li id="condition"></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-6">
-              <div class="d-flex weather-temperature">
-                <img src="" id="icon" />
-                <div>
-                  <strong id="temperature"></strong>
-                  <span class="units">°C</span>
+                <div class="col">
+                  <input
+                    type="submit"
+                    value="Search"
+                    class="btn btn-primary w-75"
+                  />
                 </div>
               </div>
-            </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>
-                  Wind: <span id="wind"></span>
-                  km/h
-                </li>
-              </ul>
+            </form>
+          </div>
+
+          <div class="container-1">
+            <div class="row">
+              <div class="d-flex weather-temperature">
+                <div class="col">
+                  <strong id="city"></strong>
+                </div>
+                <div class="col">
+                  <img src="" id="icon" />
+                </div>
+                <div class="col">
+                  <strong id="temperature"></strong>
+                </div>
+                <div class="col">
+                  <ul>
+                    <li>
+                      <span><h4>°C</h4></span>
+                      <span id="condition"></span>
+                    </li>
+                    <li>Humidity: <span id="humidity"></span>%</li>
+                    <li>
+                      Wind: <span id="wind"></span>
+                      km/h
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
